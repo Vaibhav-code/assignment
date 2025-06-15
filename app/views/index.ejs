@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update SECRET_WORD</title>
+</head>
+<body>
+  <h1>Hello from ECS Fargate!</h1>
+  <p><strong>Current SECRET_WORD:</strong> <%= secret %></p>
+
+  <form method="POST" action="/update-secret">
+    <input type="text" name="secret" placeholder="Enter new SECRET_WORD" required />
+    <button type="submit">Update</button>
+  </form>
+</body>
+</html>
